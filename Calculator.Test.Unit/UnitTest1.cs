@@ -30,6 +30,13 @@ namespace Calculator.Test.Unit
         }
 
         [Test]
+        public void TestAdd_doubleNegativeNumber()
+        {
+            //ACT + ASSERT LAMBDA
+            Assert.That(() => calc.Add(-2, -4), Is.EqualTo(-6));
+        }
+
+        [Test]
         public void TestSubtract()
         {
             //ACT
