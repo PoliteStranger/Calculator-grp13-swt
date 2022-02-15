@@ -47,6 +47,26 @@ namespace Calculator.Test.Unit
         }
 
         [Test]
+        public void TestSubtract_negativeNumber()
+        {
+            //ACT
+            double a = calc.Subtract(4, -2);
+
+            //ASSERT
+            Assert.That(a, Is.EqualTo(2));
+        }
+
+        [Test]
+        public void TestSubtract_doubleNegativeNumber()
+        {
+            //ACT
+            double a = calc.Subtract(-4, -2);
+
+            //ASSERT
+            Assert.That(a, Is.EqualTo(-6));
+        }
+
+        [Test]
         public void TestMultiply()
         {
             //ACT + ASSERT
