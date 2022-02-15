@@ -53,7 +53,7 @@ namespace Calculator.Test.Unit
             double a = calc.Subtract(4, -2);
 
             //ASSERT
-            Assert.That(a, Is.EqualTo(2));
+            Assert.That(a, Is.EqualTo(6));
         }
 
         [Test]
