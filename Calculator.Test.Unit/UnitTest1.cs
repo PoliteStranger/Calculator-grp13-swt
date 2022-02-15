@@ -81,10 +81,45 @@ namespace Calculator.Test.Unit
         }
 
         [Test]
+        public void TestPowerB()
+        {
+            //ACT + ASSERT
+            Assert.That(() => calc.Power(3, 4), Is.EqualTo(81));
+        }
+
+        [Test]
+        public void TestPowerC()
+        {
+            //ACT + ASSERT
+            Assert.That(() => calc.Power(2, 5), Is.EqualTo(32));
+        }
+
+        [Test]
         public void TestNegativeExpPower()
         {
             //ACT + ASSERT
             Assert.That(() => calc.Power(2, -2), Throws.TypeOf<ArgumentOutOfRangeException>());
+        }
+
+        [Test]
+        public void TestDivideA()
+        {
+            //ACT + ASSERT
+            Assert.That(() => calc.Devide(8, 2), Is.EqualTo(4));
+        }
+
+        [Test]
+        public void TestDivideB()
+        {
+            //ACT + ASSERT
+            Assert.That(() => calc.Devide(10, 2), Is.EqualTo(5));
+        }
+
+        [Test]
+        public void TestDivideC()
+        {
+            //ACT + ASSERT
+            Assert.That(() => calc.Devide(10, 3), Is.EqualTo(3.33));
         }
     }
 }
