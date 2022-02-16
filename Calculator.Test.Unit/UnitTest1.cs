@@ -80,43 +80,12 @@ namespace Calculator.Test.Unit
             Assert.That(() => calc.Multiply(4, -4), Is.EqualTo(-16));
         }
 
-
         [Test]
         public void TestMultiplyNegativeNegative()
         {
             //ACT + ASSERT
             Assert.That(() => calc.Multiply(-4, -4), Is.EqualTo(16));
         }
-
-        /*
-        [Test]
-        public void TestPower()
-        {
-            //ACT + ASSERT
-            Assert.That(() => calc.Power(2, 3), Is.EqualTo(8));
-        }
-
-        [Test]
-        public void TestPowerB()
-        {
-            //ACT + ASSERT
-            Assert.That(() => calc.Power(3, 4), Is.EqualTo(81));
-        }
-
-        [Test]
-        public void TestPowerC()
-        {
-            //ACT + ASSERT
-            Assert.That(() => calc.Power(2, 5), Is.EqualTo(32));
-        }
-
-        [Test]
-        public void TestNegativeExpPower()
-        {
-            //ACT + ASSERT
-            Assert.That(() => calc.Power(2, -2), Throws.TypeOf<ArgumentOutOfRangeException>());
-        }
-        */
 
         [Test]
         public void TestPowerPositivePositive()
@@ -159,29 +128,6 @@ namespace Calculator.Test.Unit
             //ACT + ASSERT
             Assert.That(() => calc.Power(0, 3), Is.EqualTo(0));
         }
-
-        /*
-        [Test]
-        public void TestDivideA()
-        {
-            //ACT + ASSERT
-            Assert.That(() => calc.Division(8, 2), Is.EqualTo(4));
-        }
-
-        [Test]
-        public void TestDivideB()
-        {
-            //ACT + ASSERT
-            Assert.That(() => calc.Division(10, 2), Is.EqualTo(5));
-        }
-
-        [Test]
-        public void TestDivideC()
-        {
-            //ACT + ASSERT
-            Assert.That(() => calc.Division(10, 3), Is.EqualTo(3.33));
-        }
-        */
 
         [Test]
         public void TestDividePositivePositive()
