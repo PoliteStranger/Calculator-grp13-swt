@@ -74,6 +74,21 @@ namespace Calculator.Test.Unit
         }
 
         [Test]
+        public void TestMultiplyPositiveNegative()
+        {
+            //ACT + ASSERT
+            Assert.That(() => calc.Multiply(4, -4), Is.EqualTo(-16));
+        }
+
+
+        [Test]
+        public void TestMultiplyNegativeNegative()
+        {
+            //ACT + ASSERT
+            Assert.That(() => calc.Multiply(-4, -4), Is.EqualTo(16));
+        }
+
+        [Test]
         public void TestPower()
         {
             //ACT + ASSERT
