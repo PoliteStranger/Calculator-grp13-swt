@@ -119,7 +119,8 @@ namespace Calculator.Test.Unit
         public void TestPowerPositiveZero()
         {
             //ACT + ASSERT
-            Assert.That(() => calc.Power(2, 0), Is.EqualTo(1));
+            Assert.That(() => calc.Power(10, 0), Throws.TypeOf<ArgumentOutOfRangeException>());
+            
         }
 
         [Test]

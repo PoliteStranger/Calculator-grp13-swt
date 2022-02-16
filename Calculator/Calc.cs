@@ -26,8 +26,8 @@ namespace Calculator
         public double Power(double a, double exp)
         {
             //test for throw exception -- negative exp not allowed!
-            //if (exp < 0)
-            //    throw new ArgumentOutOfRangeException(String.Format($"exp is negative: {exp}"));
+            if (exp == 0)
+                throw new ArgumentOutOfRangeException(String.Format("o"));
             return Math.Pow(a, exp);
         }
 
