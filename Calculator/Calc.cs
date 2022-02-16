@@ -26,14 +26,19 @@ namespace Calculator
         public double Power(double a, double exp)
         {
             //test for throw exception -- negative exp not allowed!
-            if (exp < 0)
-                throw new ArgumentOutOfRangeException(String.Format($"exp is negative: {exp}"));
+            //if (exp < 0)
+            //    throw new ArgumentOutOfRangeException(String.Format($"exp is negative: {exp}"));
             return Math.Pow(a, exp);
         }
 
         public double Division(double a, double b)
         {
             return (a / b);
+        }
+
+        public double SquareRoot(double a)
+        {
+            return Math.Sqrt(a);
         }
 
     }
